@@ -76,6 +76,7 @@ p {
 }
 
 @media screen and (min-width: 800px) {
+
   h1,
   h2,
   h3,
@@ -176,12 +177,10 @@ p {
 
 .content-divider {
   height: 6px;
-  background: linear-gradient(
-    to left,
-    var(--clr-primary),
-    yellow,
-    var(--clr-primary)
-  );
+  background: linear-gradient(to left,
+      var(--clr-primary),
+      yellow,
+      var(--clr-primary));
 }
 
 /*===============================SKILLS===================================*/
@@ -290,6 +289,7 @@ p {
 }
 
 @media screen and (min-width: 992px) {
+
   .about-image,
   .about-info {
     float: left;
@@ -339,20 +339,24 @@ p {
     padding-right: 2rem;
   }
 }
+
 @media screen and (min-width: 992px) {
   .product {
     width: 33.3%;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .products-info {
     float: left;
     width: 30%;
   }
+
   .product-inventory {
     float: left;
     width: 70%;
   }
+
   .product {
     margin-bottom: 0;
     padding: 0 1rem;
@@ -431,10 +435,103 @@ p {
     margin-right: 5%;
   }
 }
+
 @media screen and (min-width: 986px) {
   .service-card {
     float: left;
     width: 30%;
     margin-right: 3.33%;
   }
+}
+
+/*===============================Contact===================================*/
+
+.contact {
+  background-color: var(--clr-grey-10);
+}
+
+.contact-form,
+.contact-info {
+  margin: 1rem 0;
+}
+
+.contact-item {
+  margin-bottom: 1.75rem;
+}
+
+.contact-title {
+  color: var(--clr-primary);
+  font-weight: 400;
+}
+
+.contact-text {
+  text-transform: uppercase;
+}
+
+.contact-form {
+  background-color: var(--clr-white);
+  text-align: center;
+  border-radius: var(--radius);
+  box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
+  max-width: 35rem;
+  transition: var(--transition);
+}
+
+.contact-form:hover {
+  box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h3 {
+  padding-top: 1.25rem;
+  color: var(--clr-grey-5)
+}
+
+.form-group {
+  padding: 1rem 1.5rem;
+}
+
+.form-control {
+  background-color: var(--clr-grey-10);
+  display: block;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  margin: 1rem auto;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+  font-family: var(--ff-primary);
+  resize: none;
+  border-radius: var(--radius);
+  transition: ease 0.3s;
+}
+
+.form-control:focus {
+  border: solid var(--clr-primary) 1px;
+  transform: scale(1.015);
+
+}
+
+.form-control:hover {
+  transform: scale(1.015);
+}
+
+.submit-btn {
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 0px 0px var(--radius) var(--radius);
+}
+
+@media screen and (min-width:992px) {
+  .contact-form {
+    float: left;
+    width: 50%;
+  }
+
+  .contact-info {
+    float: left;
+    width: 50%;
+  }
+
 }
