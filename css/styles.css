@@ -512,10 +512,6 @@ p {
 
 }
 
-.form-control:hover {
-  transform: scale(1.015);
-}
-
 .submit-btn {
   display: block;
   padding: 1rem;
@@ -534,4 +530,34 @@ p {
     width: 50%;
   }
 
+}
+
+/*===============================Footer===================================*/
+
+footer {
+  padding: 2rem 0rem;
+  background-color: #222;
+  text-align: center;
+}
+
+.social-icon {
+  color: var(--clr-white);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  transition: var(--transition);
+}
+
+.social-icon:hover {
+  color: var(--clr-primary)
+}
+
+.footer-text {
+  margin-top: 1.25rem;
+  color: var(--clr-white);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.company {
+  color: var(--clr-primary);
 }
